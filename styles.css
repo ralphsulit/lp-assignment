@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 20px 20px 0 20px;
+  width: 100%;
+  height: 100vh;
+}
+
+/**************************  
+General Styles
+***************************/
+.uppercase {
+  text-transform: uppercase;
+}
+
+/**************************  
+Navigation Section
+***************************/
+.navbar {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.nav-logo {
+  width: 300px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 13px !important;
+}
+
+/**************************  
+Banner Section
+***************************/
+.image-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),url(https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQxNDUyfQ&w=1920);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  width: 100%;
+  position: relative;
+}
