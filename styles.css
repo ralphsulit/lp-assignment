@@ -23,16 +23,33 @@ General Styles
 }
 
 /**************************  
-Navigation Section
+Banner Section
+***************************/
+.image-section {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.80)),url(https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQxNDUyfQ&w=1920);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  width: 100%;
+}
+
+/**************************  
+Navigation Section and Header
 ***************************/
 .navbar {
   position: absolute;
-  margin: 20px;
+  /* margin: 0 20px 20px 20px; */
   width: auto;
 }
 
+.navbar-brand img {
+  width: 150px;
+}
+
 .nav-logo {
-  width: 300px;
+  width: 150px;
 }
 
 .nav-link {
@@ -40,15 +57,53 @@ Navigation Section
   font-size: 13px !important;
 }
 
+#navbarNavAltMarkup {
+  position: absolute;
+  z-index: 1;
+  top: 70px;
+  left: 50px;
+  padding: 20px 50px 20px 50px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header-text {
+  color: #fff;
+  min-height: 420px;
+  letter-spacing: 8px;
+}
+
 /**************************  
-Banner Section
+Marketing Plan Section
 ***************************/
-.image-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),url(https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQxNDUyfQ&w=1920);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 600px;
-  width: 100%;
-  position: relative;
+.marketing-plan-section {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.marketing-card {
+  margin: 20px;
+}
+
+.marketing-card-img img {
+  width: 100px;
+  height: 100px;
+}
+
+
+/**************************  
+Media Queries
+***************************/
+/* Medium Devices (tablets, 720px) */
+@media (min-width: 720px) {
+  
+}
+
+/* Large Devices (desktops, 1024px) */
+@media (min-width: 1024px) {
+
+}
+
+/* Extra Large Devices (large desktops, 1920) */
+@media (min-width: 1920px) {
+
 }

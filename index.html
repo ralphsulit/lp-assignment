@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" sizes="16x16" href="./assets/img/icons/logo.webp">
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
   <!-- Bootstrap CSS -->
@@ -15,10 +16,12 @@
   <title>Services | Pleasanton Real Estate | Julie Hansen Partnership</title>
 </head>
 <body>
-  <section class="image-section">
+  <!-- Navigation and Banner -->
+  <header class="image-section">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
+        <a class="nav-link d-lg-none" href="#"><img class="nav-logo" src="./assets/img/icons/logo.webp" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,7 +32,7 @@
             <a class="nav-link uppercase" aria-current="page" href="#">homes our commmunities</a>
             <a class="nav-link uppercase" href="#">home evaluation</a>
             <!-- navigation logo -->
-            <a class="nav-link" href="#"><img class="nav-logo" src="./assets/img/icons/logo.webp" alt=""></a>
+            <a class="navbar-brand d-none d-lg-block" href="#"><img src="./assets/img/icons/logo.webp" alt="pleasanton logo"></a>
             <a class="nav-link uppercase" href="#">services</a>
             <a class="nav-link uppercase" href="#">home accross america</a>
             <a class="nav-link uppercase" href="#">tesimonials</a>
@@ -38,6 +41,49 @@
         </div>
       </div>
     </nav>
+    <!-- Banner -->
+    <div>
+      <h1 class="header-text d-flex align-items-center justify-content-center">Services</h1>
+    </div>
+  </header>
+
+  <!-- Marketing Plan -->
+  <section class="marketing-plan-section">
+    <h2>Comprehensive Marketing Plan</h2>
+    <div class="marketing-cards d-flex">
+      <!-- Card 1 (Responsive) -->
+      <div class="marketing-card">
+        <div class="marketing-card-img"><img src="./assets/img/icons/mail.webp" alt="envelope"></div>
+        <div class="marketing-card-body">
+          <h3>Responsive</h3>
+          <p>I am always available via phone, text, or email.</p>
+        </div>
+      </div>
+      <!-- Card 2 (Syndication) -->
+      <div class="marketing-card">
+        <div class="marketing-card-img"><img src="./assets/img/icons/flag.webp" alt="flag"></div>
+        <div class="marketing-card-body">
+          <h3>Syndication</h3>
+          <p>I market your property locally, nationally, and internationally</p>
+        </div>
+      </div>
+      <!-- Card 3 (Virtual Tour) -->
+      <div class="marketing-card">
+        <div class="marketing-card-img"><img src="./assets/img/icons/location.webp" alt="location"></div>
+        <div class="marketing-card-body">
+          <h3>Virtual Tour</h3>
+          <p>Let's make your home stand out with a high quality virtual tour.</p>
+        </div>
+      </div>
+      <!-- Card 4 (Photography) -->
+      <div class="marketing-card">
+        <div class="marketing-card-img"><img src="./assets/img/icons/image.webp" alt="image icon"></div>
+        <div class="marketing-card-body">
+          <h3>Photography</h3>
+          <p>Beatiful, high-end photography is a central part of our marketing plan for your property.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Javascript -->
