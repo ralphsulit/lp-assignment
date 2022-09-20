@@ -27,7 +27,7 @@ Banner Section
 ***************************/
 .image-section {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.80)),url(https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQxNDUyfQ&w=1920);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.30)),url(https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjQxNDUyfQ&w=1920);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55,15 +55,14 @@ Navigation Section and Header
 .nav-link {
   color: #fff !important;
   font-size: 13px !important;
+  margin: 5px 0;
 }
 
-#navbarNavAltMarkup {
-  position: absolute;
-  z-index: 1;
-  top: 70px;
-  left: 50px;
-  padding: 20px 50px 20px 50px;
-  background-color: rgba(0, 0, 0, 0.9);
+.nav-btn {
+  background-color: #A59139;
+  padding: 8px 20px !important;
+  margin-left: 10px;
+  border-radius: 20px;
 }
 
 .header-text {
@@ -78,10 +77,18 @@ Marketing Plan Section
 .marketing-plan-section {
   text-align: center;
   margin: 50px auto;
+  width: 80%;
+}
+
+.marketing-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .marketing-card {
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .marketing-card-img img {
@@ -100,6 +107,18 @@ Media Queries
 
 /* Large Devices (desktops, 1024px) */
 @media (min-width: 1024px) {
+
+  /**************************  
+  Marketing Plan Section
+  ***************************/
+  .marketing-cards {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .marketing-card {
+    width: 250px;
+  }
 
 }
 
