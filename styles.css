@@ -65,10 +65,24 @@ Navigation Section and Header
   border-radius: 20px;
 }
 
+.banner {
+  height: 500px;
+  justify-content: center;
+}
+
 .header-text {
   color: #fff;
-  min-height: 420px;
   letter-spacing: 8px;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+.search-box input {
+  font-size: 0.8rem;
 }
 
 /**************************  
@@ -102,12 +116,16 @@ Media Queries
 ***************************/
 /* Medium Devices (tablets, 720px) */
 @media (min-width: 720px) {
-  
+  /**************************  
+  Navigation Section and Header
+  ***************************/
+  .search-box {
+    max-width: 300px;
+  }
 }
 
 /* Large Devices (desktops, 1024px) */
 @media (min-width: 1024px) {
-
   /**************************  
   Marketing Plan Section
   ***************************/
