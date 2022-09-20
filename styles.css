@@ -55,6 +55,7 @@ Navigation Section and Header
 .nav-link {
   color: #fff !important;
   font-size: 13px !important;
+  font-weight: 600 !important;
   margin: 5px 0;
 }
 
@@ -110,10 +111,46 @@ Marketing Plan Section
   height: 100px;
 }
 
+/**************************  
+Staging Expertise Cards 
+***************************/
+.expertise-section {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.left-expertise-card,
+.right-expertise-card {
+  margin-bottom: 100px;
+  max-height: 250px;
+  position: relative;
+}
+
+.expertise-card-title {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 10px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.expertise-section img {
+  width: 100%;
+  height: 98%;
+}
+
+/**********************************************************/
+
 
 /**************************  
 Media Queries
 ***************************/
+
 /* Medium Devices (tablets, 720px) */
 @media (min-width: 720px) {
   /**************************  
@@ -122,10 +159,34 @@ Media Queries
   .search-box {
     max-width: 300px;
   }
+
+  /**************************  
+  Staging Expertise Cards 
+  ***************************/
+  .expertise-section {
+    max-width: 1200px;
+    margin: 0 auto;;
+  }
+
+  .expertise-section h2{
+    font-size: 1.3rem;
+  }
+
+  .left-expertise-card,
+  .right-expertise-card {
+    max-width: 450px;
+  }
 }
 
 /* Large Devices (desktops, 1024px) */
 @media (min-width: 1024px) {
+  /**************************  
+  Navigation Section and Header
+  ***************************/
+  .nav-link {
+    font-size: 9px !important;
+  }
+
   /**************************  
   Marketing Plan Section
   ***************************/
@@ -137,10 +198,14 @@ Media Queries
   .marketing-card {
     width: 250px;
   }
-
 }
 
 /* Extra Large Devices (large desktops, 1920) */
-@media (min-width: 1920px) {
-
+@media (min-width: 1440px) {
+  /**************************  
+  Navigation Section and Header
+  ***************************/
+  .nav-link {
+    font-size: 12px !important;
+  }
 }
